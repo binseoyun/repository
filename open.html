@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div class="open">
+            <p id="open">서울여행가이드</p>
+        </div>
+        <style>
+        .open{
+            border:1px double;
+            border-radius:20px;
+            background-color:rgba(183, 206, 240, 0.867);
+            width:500px;
+            height:80px;
+            margin:300px 500px;
+        }
+        #open{
+            font-weight: bold;
+            text-align:center;
+            font-size: large;
+
+
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+          var click=document.getElementById("open");
+          click.addEventListener("mouseover",function(){
+               click.style.color="white";
+         
+          })
+          click.addEventListener("mouseout",function(){
+               click.style.color="";
+         
+          })
+          click.addEventListener("click",function(){
+               click.style.color="blue";
+               location.replace("index.html");
+         
+          })
+
+        </script>
+    </body>
+</html>
